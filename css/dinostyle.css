@@ -1,0 +1,255 @@
+:root {
+	--green: #96BF1E;
+}
+
+.site-header {
+	align-items: center;
+	font-size: 15px;
+	margin: 5px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	width: 200px; 
+	height: 200px;
+	background: #ffffff;
+	position: relative;
+}
+
+.dinobody {
+		 width: 105px;
+		 height: 74px;
+		 border-radius: 50%;
+		 background: radial-gradient(circle closest-corner at 70px 60px, white, var(--green));
+		 position: absolute;
+		 top: 80px;
+		 left: 50%;
+		 transform: translateX(-50%);
+}
+
+.tail {
+	width: 140px; 
+	height: 100px; 
+	margin: 20px 0 40px 0;
+	border-radius: 50%;
+	box-shadow: -25px 10px 0 0 var(--green);
+	position: absolute;
+}
+
+.neck {
+	width: 30px;
+	height: 60px;
+	background: var(--green);
+	transform: rotate(35deg);
+	margin: 40px -75px 0 0 ;
+	position: absolute;
+}
+
+.head {
+	width: 52px;
+	height: 67px;
+	background: var(--green);
+	border-radius: 50%;
+	margin: 10px -125px 0 0;
+	transform: rotate(105deg);
+	position: absolute;
+}
+
+.left, .right {
+	background: black;
+	border-radius: 100%;
+	width: 7px;
+	height: 15px;
+	position: absolute;
+	display: flex;
+	margin-top: 25px;
+	margin-left: 120px;
+}
+
+.right {
+	margin-top: 23px;
+	margin-left: 140px;
+}
+
+.cutout {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: white;
+	border-radius: 50%;
+	align-self: flex-end;
+	margin-bottom: 4px;
+	margin-left: 3px;
+}
+
+.leftnostril, .rightnostril {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: black;
+	border-radius: 50%;
+	align-self: flex-end;
+	margin-bottom: 145px;
+	margin-left: 140px;
+}
+
+.rightnostril {
+	margin-bottom: 148px;
+	margin-left: 155px;
+}
+
+.maskforteeth {
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	background: var(--green);
+	border-radius: 50%;
+	margin-top: 35px;
+	margin-left: 145px;
+}
+
+.t1, .t2, .t3, .t4 {
+position: absolute;
+width: 0; 
+height: 0;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-top: 9px solid #E6F400;
+margin-left: 110px;
+margin-top: 59px;
+transform: rotate(30deg);
+}
+
+.t2 {
+	margin-top: 64px;
+	margin-left: 133px;
+	transform: rotate(15deg);
+}
+
+.t3 {
+	margin-top: 64px;
+	margin-left: 157px;
+	transform: rotate(-10deg);
+}
+
+.t4 {
+	margin-top: 58px;
+	margin-left: 177px;
+	transform: rotate(-35deg);
+}
+
+.leftear, .rightear {
+position: absolute;
+width: 1px; 
+height: 30px;
+background: var(--green);
+margin-left: 100px;
+margin-top: 5px;
+}
+
+.leftear {
+	transform: rotate(-20deg);
+}
+
+.rightear {
+	transform: rotate(20deg);
+	margin-left: 120px;
+}
+
+.righthand, .lefthand {
+position: absolute;
+width: 37px; 
+height: 12px;
+border-radius: 10px;
+background: #7EA320;
+margin-top: 100px;
+margin-left: 80px;
+transform: rotate(15deg);
+}
+
+
+.lefthand {
+background: #587D12;
+height: 10px;
+margin-top: 90px;
+margin-left: 100px;
+}
+
+.leftwrist, .rightwrist {
+	position: absolute;
+	width: 12px;
+	height: 18px;
+	background: #7EA320;
+	border-radius: 50%;
+	margin-top: 104px;
+	margin-left: 106px;
+}
+
+.leftwrist {
+	background: #587D12;
+	width: 10px;
+	height: 14px;
+	margin-top: 95px;
+	margin-left: 129px;
+}
+
+.rightleg, .leftleg {
+	position: absolute;
+	width: 15px; 
+	height: 50px;
+	border-radius: 10px;
+	background: #7EA320;
+	margin-top: 125px;
+	margin-left: -30px;
+	transform: rotate(5deg);
+	}
+
+.leftleg {
+	margin-top: 123px;
+	margin-left: 10px;
+	background: #587D12;
+}
+	
+.rightankle, .leftankle {
+	position: absolute;
+	width: 40px; 
+	height: 30px;
+	border-radius: 15px;
+	background: radial-gradient(circle closest-corner at 30px 5px, rgb(212, 236, 167), #7EA320);
+	margin-top: 165px;
+	margin-left: 3px;
+	transform: rotate(5deg);
+
+	
+	}
+
+.leftankle{
+	margin-top: 165px;
+	margin-left: 35px;
+	background: radial-gradient(circle closest-corner at 30px 5px, #a5c765, #587D12);
+}
+
+.maskrightankle {
+	position: absolute;
+	width: 45px; 
+	height: 30px;
+	background: rgb(255, 255, 255);
+	margin-top: 176px;
+	margin-left: 0px;
+	transform: rotate(5deg);
+}
+
+.maskleftankle {
+	position: absolute;
+	width: 45px; 
+	height: 30px;
+	background: rgb(255, 255, 255);
+	margin-top: 176px;
+	margin-left: 38px;
+	transform: rotate(5deg);
+}

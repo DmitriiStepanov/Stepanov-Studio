@@ -1,0 +1,152 @@
+
+.relaxcontainer {
+    overflow: hidden;
+    display: flex;
+    width: 200px; 
+    height: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    animation: shaking 0.1s ease-in-out infinite alternate;
+    animation-play-state: paused;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    position: absolute;
+}
+
+.spruce {
+    position: absolute;
+    height: 120px;
+    top: 65px;
+}
+
+.runningfox {
+    position: absolute;
+    height: 60px;
+    top: 120px;
+    animation: runfox 1.2s ease-in-out;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+ 
+
+
+.text {
+    left: 50px;
+    font-size: small;
+    text-align: center;
+    color: black;
+    position: absolute;
+    display: none;
+}
+
+.standingfox {
+    visibility: hidden;
+    position: absolute;
+    height: 60px;
+    top: 120px;
+    right: 30px;
+}
+
+.sun {
+    visibility: hidden;
+    position: absolute;
+    height: 60px;
+    animation: sungoes 1s ease-in infinite alternate;
+
+}
+
+.bestrelax {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    text-align: center;
+    color: rgb(189, 138, 72);
+    transform: rotate(20deg);
+    top: 80px;
+    left: 100px;
+}
+
+.relaxcontainer:hover .runningfox  {
+    animation-play-state: running;
+}
+
+.relaxcontainer:hover .text {
+    display: block;
+}
+
+.relaxcontainer:hover .standingfox {
+    visibility: hidden;
+}
+
+.relaxcontainer:active .runningfox {
+    visibility: hidden;
+}
+
+.relaxcontainer:active .text {
+    visibility: hidden;
+}
+
+.relaxcontainer:active .standingfox {
+    visibility: visible;
+}
+
+.relaxcontainer:active .sun {
+    visibility: visible;
+    animation-play-state: running;
+}
+
+.relaxcontainer:active {
+    animation-play-state: running;
+}
+
+.relaxcontainer:active .bestrelax {
+    visibility: visible;
+}
+
+
+@keyframes runfox {
+    0% {
+        right: -60px;
+    }
+    100% {
+        right: 30px;
+    }
+}
+
+@keyframes sungoes {
+ 0% {
+    top: 5%;
+    left: 0%;
+ }  
+ 25% {
+    top: 3%;
+    left: 17%;
+ }  
+ 50% {
+    top: 1%;
+    left: 35%;
+ }  
+ 75% {
+    top: 3%;
+    left: 52%;
+ }  
+ 100% {
+    top: 5%;
+    left: 70%;
+ }
+}
+
+@keyframes shaking {
+    0% {
+        top: 5px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
